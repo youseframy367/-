@@ -1,0 +1,44 @@
+body,
+html {
+    overflow-x: hidden;
+}
+
+.activ {
+    font-weight: 700;
+    position: relative;
+}
+
+.activ::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 90%;
+    height: 3px;
+    background-color: #076D59;
+    border-radius: 4px;
+}
+
+.scroll-container {
+    overflow: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+
+/* نفس الشكل على الشاشات الكبيرة */
+
+.scroll-container {
+    overflow-y: auto;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
